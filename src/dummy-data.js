@@ -46,6 +46,8 @@ const dummyData = [
         ]
     }
 ];
+
+// I start to add my data here by using .push to add the data in to array.
 dummyData.push(
     {
         username: "Pupe",

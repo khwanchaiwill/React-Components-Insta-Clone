@@ -11,7 +11,7 @@ import PostsPage from "./components/PostsContainer/PostsPage";
 import SearchBar from "./components/SearchBar/SearchBarContainer"
 import dummyData from "./dummy-data"
 const App = () => {
- 
+ // set up the state here for the search tool 
   const [searchText, setSearchText] = useState('')
   const [user, setUser] = useState(dummyData)
 
@@ -19,8 +19,9 @@ const App = () => {
   return (
     <div className="App">
       {/* Add imported components here to render them */}
-      <SearchBar updater={setSearchText} />        
+      <SearchBar updater={setSearchText} />     {/* searchCar handle the search text string*/}   
       <PostsPage search={user.filter(searchlist =>{
+        {/*render the search event here by use .filter to return the result after search */}
         if(!searchText || searchlist.username.includes(searchText)){
           return searchlist;
         }

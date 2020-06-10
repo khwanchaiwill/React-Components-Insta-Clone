@@ -15,8 +15,10 @@ const PostsPage = (props) => {
     <div className="posts-container-wrapper">
       {/* map through data here to return a Post and pass data as props to Post */}
      {
-      search.map((postData, index,date) =>{
-         return <Post key={index} post={postData} date={date}/>
+       // map through the dummyData by using.map to loop through and return the whole array to store the file.
+       // render the postData to post. and give the post the uniqe key by using index parameter to give the value.
+      search.map((postData, index) =>{
+         return <Post key={index} post={postData} />
          
        })
      }

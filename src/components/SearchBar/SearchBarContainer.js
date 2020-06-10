@@ -5,6 +5,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faHeart, faCircle, faCompass } from '@fortawesome/free-regular-svg-icons'
 import "./SearchBar.css";
 const SearchBar = (props) => {
+  // creat the updater properties to handler the event function to creat the search event
   const {updater} = props
   const changeHandler = event =>{
     updater(event.target.value)
@@ -17,7 +18,7 @@ const SearchBar = (props) => {
         <FontAwesomeIcon icon={faInstagram} />
       </div>
       <form className="search-form">
-        <input onChange={changeHandler}
+        <input onChange={changeHandler} // onchange is return the changehandler
           type="text"
           placeholder="Search"
         />
