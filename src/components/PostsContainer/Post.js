@@ -11,7 +11,6 @@ const Post = props => {
   // set up state for the likes
 const [like, setLike] = useState(props.post.likes)
 const [comMent, setComment] = useState(props.post.comments)
-
 console.log(props)
   return (
     <div className="post-border">
@@ -20,14 +19,17 @@ console.log(props)
         thumbnailUrl={
           props.post.thumbnailUrl
         }
+       
       />
       <div className="post-image-wrapper">
+      
         <img
           alt="post thumbnail"
           className="post-image"
           src={props.post.imageUrl}
         />
       </div>
+
       <LikeSection like={like} />
       <CommentSection
         postId={props.post.imageUrl}

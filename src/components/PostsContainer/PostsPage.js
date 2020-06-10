@@ -9,17 +9,18 @@ console.log(dummyData)
 
 const PostsPage = (props) => {
   // set up state for your data
-  const [page, setPost] = useState(dummyData)
+  // const [page, setPost] = useState(dummyData)
+  const {search} = props
   return (
     <div className="posts-container-wrapper">
       {/* map through data here to return a Post and pass data as props to Post */}
      {
-       page.map((postData, index) =>{
-         return <Post key={index} post={postData}/>
+      search.map((postData, index,date) =>{
+         return <Post key={index} post={postData} date={date}/>
          
        })
      }
-    console.log(postList)
+    
     </div>
   );
 };

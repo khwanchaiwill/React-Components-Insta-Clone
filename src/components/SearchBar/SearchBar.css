@@ -1,5 +1,6 @@
-.search-bar-wrapper {
-  border-bottom: 1px solid #3333;
+
+.search-bar-wrapper{
+  border-bottom: 1px solid green;
   height: 60px;
   display: flex;
   justify-content: space-evenly;
@@ -9,6 +10,7 @@
 .search-form {
   width: 150px;
   font-size: 14px;
+
 }
 .search-form input {
   text-align: center;
@@ -26,3 +28,4 @@
 .social {
   width: 50px;
 }
+
